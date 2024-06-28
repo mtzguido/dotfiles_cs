@@ -1,0 +1,9 @@
+.*.swp
+**/#*#
+.#*
+tags
+tags.temp
+tags.lock
+*~
+*.ramon
+*.log
