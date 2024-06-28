@@ -1,0 +1,51 @@
+[push]
+	default = simple
+[core]
+	editor = vim
+	excludesfile = /home/guido/.gitignore
+[user]
+	name = Guido Martínez
+	email = mtzguido@gmail.com
+[sendemail]
+	smtpserver = /usr/bin/msmtp
+[grep]
+	linenumber = true
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	cpick = cherry-pick
+	fp = format-patch
+	p = pull
+	pr = pull --rebase
+	ru = remote update
+	f = fetch
+	ri = rebase -i
+	rc = rebase --continue
+	ap = add -p
+	rh = reset --hard
+	m = commit --amend
+	mm = commit --amend --no-edit
+	wta = worktree add
+	fuckit = !"git add . ; git commit ; git push"
+	purge = !"git clean -dffx ; git submodule foreach git clean -dffx"
+[log]
+	decorate = true
+	ignore = "tags"
+[diff]
+	colorMoved = plain
+[color.diff]
+	oldMoved = magenta
+	newMoved = cyan
+[clean]
+	exclude = "tags"
+[color]
+	ui = auto
+[http]
+	postBuffer = 15728640000
+[pull]
+	rebase = false
+[merge]
+	conflictStyle = diff3
+[init]
+	defaultBranch = master
